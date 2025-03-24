@@ -18,6 +18,7 @@
             this.cmbDatSan = new System.Windows.Forms.ComboBox();
             this.picQRCode = new System.Windows.Forms.PictureBox();
             this.lblQRInfo = new System.Windows.Forms.Label();
+            this.btnKiemTra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCode)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,11 +51,22 @@
             this.lblQRInfo.Text = "Vui lòng chọn lịch đặt sân để thanh toán.";
             this.lblQRInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnKiemTra
+            // 
+            this.btnKiemTra.Location = new System.Drawing.Point(350, 310);
+            this.btnKiemTra.Name = "btnKiemTra";
+            this.btnKiemTra.Size = new System.Drawing.Size(100, 30);
+            this.btnKiemTra.TabIndex = 3;
+            this.btnKiemTra.Text = "Kiểm tra";
+            this.btnKiemTra.UseVisualStyleBackColor = true;
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
+            // 
             // FormThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnKiemTra);
             this.Controls.Add(this.lblQRInfo);
             this.Controls.Add(this.picQRCode);
             this.Controls.Add(this.cmbDatSan);
@@ -68,5 +80,6 @@
         private System.Windows.Forms.ComboBox cmbDatSan;
         private System.Windows.Forms.PictureBox picQRCode;
         private System.Windows.Forms.Label lblQRInfo;
+        private System.Windows.Forms.Button btnKiemTra;
     }
 }

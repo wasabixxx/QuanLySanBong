@@ -15,84 +15,68 @@ namespace QuanLySanBong
             InitializeComponent();
         }
 
+        private void CloseAllForms()
+        {
+            if (formQuanLySan != null && !formQuanLySan.IsDisposed)
+            {
+                formQuanLySan.Close();
+                formQuanLySan = null;
+            }
+            if (formDatSan != null && !formDatSan.IsDisposed)
+            {
+                formDatSan.Close();
+                formDatSan = null;
+            }
+            if (formXemLich != null && !formXemLich.IsDisposed)
+            {
+                formXemLich.Close();
+                formXemLich = null;
+            }
+            if (formThanhToan != null && !formThanhToan.IsDisposed)
+            {
+                formThanhToan.Close();
+                formThanhToan = null;
+            }
+        }
+
         private void mnuQuanLySan_Click(object sender, EventArgs e)
         {
-            if (formQuanLySan == null || formQuanLySan.IsDisposed)
-            {
-                formQuanLySan = new FormQuanLySan();
-                formQuanLySan.MdiParent = this;
-                formQuanLySan.FormBorderStyle = FormBorderStyle.None;
-                formQuanLySan.Dock = DockStyle.Fill;
-                formQuanLySan.Show();
-            }
-            else
-            {
-                formQuanLySan.BringToFront();
-            }
-
-            if (formDatSan != null && !formDatSan.IsDisposed) formDatSan.Hide();
-            if (formXemLich != null && !formXemLich.IsDisposed) formXemLich.Hide();
-            if (formThanhToan != null && !formThanhToan.IsDisposed) formThanhToan.Hide();
+            CloseAllForms();
+            formQuanLySan = new FormQuanLySan();
+            formQuanLySan.MdiParent = this;
+            formQuanLySan.FormBorderStyle = FormBorderStyle.None;
+            formQuanLySan.Dock = DockStyle.Fill;
+            formQuanLySan.Show();
         }
 
         private void mnuDatSan_Click(object sender, EventArgs e)
         {
-            if (formDatSan == null || formDatSan.IsDisposed)
-            {
-                formDatSan = new FormDatSan();
-                formDatSan.MdiParent = this;
-                formDatSan.FormBorderStyle = FormBorderStyle.None;
-                formDatSan.Dock = DockStyle.Fill;
-                formDatSan.Show();
-            }
-            else
-            {
-                formDatSan.BringToFront();
-            }
-
-            if (formQuanLySan != null && !formQuanLySan.IsDisposed) formQuanLySan.Hide();
-            if (formXemLich != null && !formXemLich.IsDisposed) formXemLich.Hide();
-            if (formThanhToan != null && !formThanhToan.IsDisposed) formThanhToan.Hide();
+            CloseAllForms();
+            formDatSan = new FormDatSan();
+            formDatSan.MdiParent = this;
+            formDatSan.FormBorderStyle = FormBorderStyle.None;
+            formDatSan.Dock = DockStyle.Fill;
+            formDatSan.Show();
         }
 
         private void mnuXemLich_Click(object sender, EventArgs e)
         {
-            if (formXemLich == null || formXemLich.IsDisposed)
-            {
-                formXemLich = new FormXemLich();
-                formXemLich.MdiParent = this;
-                formXemLich.FormBorderStyle = FormBorderStyle.None;
-                formXemLich.Dock = DockStyle.Fill;
-                formXemLich.Show();
-            }
-            else
-            {
-                formXemLich.BringToFront();
-            }
-
-            if (formQuanLySan != null && !formQuanLySan.IsDisposed) formQuanLySan.Hide();
-            if (formDatSan != null && !formDatSan.IsDisposed) formDatSan.Hide();
-            if (formThanhToan != null && !formThanhToan.IsDisposed) formThanhToan.Hide();
+            CloseAllForms();
+            formXemLich = new FormXemLich();
+            formXemLich.MdiParent = this;
+            formXemLich.FormBorderStyle = FormBorderStyle.None;
+            formXemLich.Dock = DockStyle.Fill;
+            formXemLich.Show();
         }
 
         private void mnuThanhToan_Click(object sender, EventArgs e)
         {
-            if (formThanhToan == null || formThanhToan.IsDisposed)
-            {
-                formThanhToan = new FormThanhToan();
-                formThanhToan.MdiParent = this;
-                formThanhToan.FormBorderStyle = FormBorderStyle.None;
-                formThanhToan.Dock = DockStyle.Fill;
-                formThanhToan.Show();
-            }
-            else
-            {
-                formThanhToan.BringToFront();
-            }
-
-            if (formQuanLySan != null && !formQuanLySan.IsDisposed) formQuanLySan.Hide();
-            if (formDatSan != null && !formDatSan.IsDisposed) formDatSan.Hide();
-            if (formXemLich != null && !formXemLich.IsDisposed) formXemLich.Hide();
+            CloseAllForms();
+            formThanhToan = new FormThanhToan();
+            formThanhToan.MdiParent = this;
+            formThanhToan.FormBorderStyle = FormBorderStyle.None;
+            formThanhToan.Dock = DockStyle.Fill;
+            formThanhToan.Show();
         }
 
         private void mnuThoat_Click(object sender, EventArgs e)

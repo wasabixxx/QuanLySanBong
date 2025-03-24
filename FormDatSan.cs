@@ -12,10 +12,9 @@ namespace QuanLySanBong
         public FormDatSan()
         {
             InitializeComponent();
-            LoadSanBong(); // Load danh sách sân vào ComboBox
+            LoadSanBong();
         }
 
-        // Load danh sách sân vào ComboBox
         private void LoadSanBong()
         {
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
@@ -35,19 +34,18 @@ namespace QuanLySanBong
             }
         }
 
-        // Kiểm tra lịch trống
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
-            if (cmbSanBong.SelectedItem == null || string.IsNullOrEmpty(txtGioBatDau.Text) || string.IsNullOrEmpty(txtGioKetThuc.Text))
+            if (cmbSanBong.SelectedItem == null)
             {
-                MessageBox.Show("Vui lòng chọn sân và nhập giờ bắt đầu/kết thúc!");
+                MessageBox.Show("Vui lòng chọn sân!");
                 return;
             }
 
             selectedMaSan = (int)(cmbSanBong.SelectedItem as dynamic).MaSan;
             string ngayDat = dtpNgayDat.Value.ToString("yyyy-MM-dd");
-            string gioBatDau = txtGioBatDau.Text;
-            string gioKetThuc = txtGioKetThuc.Text;
+            string gioBatDau = dtpGioBatDau.Value.ToString("HH:mm");
+            string gioKetThuc = dtpGioKetThuc.Value.ToString("HH:mm");
 
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
@@ -75,7 +73,6 @@ namespace QuanLySanBong
             }
         }
 
-        // Đặt sân
         private void btnDatSan_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtTenKH.Text) || string.IsNullOrEmpty(txtSoDienThoai.Text))
@@ -84,8 +81,17 @@ namespace QuanLySanBong
                 return;
             }
 
-            // Thêm khách hàng vào bảng KhachHang
-            int maKH;
+            // Lấy giờ bắt đầu và giờ kết thúc từ DateTimePicker
+            TimeSpan gioBatDau = dtpGioBatDau.Value.TimeOfDay;
+            TimeSpan gioKetThuc = dtpGioKetThuc.Value.TimeOfDay;
+
+            // Kiểm tra giờ kết thúc phải lớn hơn giờ bắt đầu
+            if (gioKetThuc <= gioBatDau)
+            {
+                MessageBox.Show("Giờ kết thúc phải lớn hơn giờ bắt đầu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
                 conn.Open();
@@ -93,42 +99,41 @@ namespace QuanLySanBong
                 SQLiteCommand cmdKH = new SQLiteCommand(queryKH, conn);
                 cmdKH.Parameters.AddWithValue("@TenKH", txtTenKH.Text);
                 cmdKH.Parameters.AddWithValue("@SoDienThoai", txtSoDienThoai.Text);
-                maKH = Convert.ToInt32(cmdKH.ExecuteScalar());
+                int maKH = Convert.ToInt32(cmdKH.ExecuteScalar());
 
-                // Tính tổng tiền
                 int giaThue = 0;
                 string queryGia = "SELECT GiaThue FROM SanBong WHERE MaSan = @MaSan";
                 SQLiteCommand cmdGia = new SQLiteCommand(queryGia, conn);
                 cmdGia.Parameters.AddWithValue("@MaSan", selectedMaSan);
                 giaThue = Convert.ToInt32(cmdGia.ExecuteScalar());
 
-                TimeSpan thoiGian = TimeSpan.Parse(txtGioKetThuc.Text) - TimeSpan.Parse(txtGioBatDau.Text);
-                int tongTien = (int)(thoiGian.TotalHours * giaThue);
+                // Tính thời gian (giờ kết thúc - giờ bắt đầu)
+                TimeSpan thoiGian = gioKetThuc - gioBatDau;
 
-                // Thêm lịch đặt sân
-                string queryDatSan = "INSERT INTO DatSan (MaSan, MaKH, NgayDat, GioBatDau, GioKetThuc, TongTien) " +
-                                    "VALUES (@MaSan, @MaKH, @NgayDat, @GioBatDau, @GioKetThuc, @TongTien)";
+                // Tính tổng tiền (giữ thuật toán cũ)
+                decimal tongTien = (decimal)(thoiGian.TotalHours * giaThue);
+
+                string queryDatSan = "INSERT INTO DatSan (MaSan, MaKH, NgayDat, GioBatDau, GioKetThuc, TongTien, TrangThaiThanhToan) " +
+                                    "VALUES (@MaSan, @MaKH, @NgayDat, @GioBatDau, @GioKetThuc, @TongTien, 0); SELECT last_insert_rowid();";
                 SQLiteCommand cmdDatSan = new SQLiteCommand(queryDatSan, conn);
                 cmdDatSan.Parameters.AddWithValue("@MaSan", selectedMaSan);
                 cmdDatSan.Parameters.AddWithValue("@MaKH", maKH);
                 cmdDatSan.Parameters.AddWithValue("@NgayDat", dtpNgayDat.Value.ToString("yyyy-MM-dd"));
-                cmdDatSan.Parameters.AddWithValue("@GioBatDau", txtGioBatDau.Text);
-                cmdDatSan.Parameters.AddWithValue("@GioKetThuc", txtGioKetThuc.Text);
+                cmdDatSan.Parameters.AddWithValue("@GioBatDau", dtpGioBatDau.Value.ToString("HH:mm"));
+                cmdDatSan.Parameters.AddWithValue("@GioKetThuc", dtpGioKetThuc.Value.ToString("HH:mm"));
                 cmdDatSan.Parameters.AddWithValue("@TongTien", tongTien);
-                cmdDatSan.ExecuteNonQuery();
+                int maDatSan = Convert.ToInt32(cmdDatSan.ExecuteScalar());
 
                 conn.Close();
             }
 
-            MessageBox.Show("Đặt sân thành công!");
+            MessageBox.Show("Đặt sân thành công! Vui lòng vào tab Thanh toán để thanh toán.");
             ClearInputs();
         }
 
         private void ClearInputs()
         {
             cmbSanBong.SelectedIndex = -1;
-            txtGioBatDau.Clear();
-            txtGioKetThuc.Clear();
             txtTenKH.Clear();
             txtSoDienThoai.Clear();
         }
