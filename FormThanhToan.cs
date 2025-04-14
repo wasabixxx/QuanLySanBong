@@ -12,8 +12,8 @@ namespace QuanLySanBong
         private string maDatSan; // Mã đặt sân
         private decimal totalBill; // Tổng tiền cần thanh toán
         private string qrUrl; // URL của mã QR
-        private readonly string sepayApiToken = "your_api_token_here"; // Thay bằng API Token thực tế từ SePay
-        private readonly string sepayUsername = "your_username_here"; // Thay bằng username thực tế từ SePay
+        private readonly string sepayApiToken = "UTT4PIMLCUIUEDISZ0RDD3CLHX5VXH2ABZR6NASEOJXHKZJK5GI94YMQBVPNS2PN"; // Thay bằng API Token thực tế từ SePay
+        private readonly string sepayUsername = "QuanLySanBong"; // Thay bằng username thực tế từ SePay
         private readonly string connectionString = "Data Source=QuanLySanBong.db;Version=3;";
 
         public FormThanhToan()
@@ -114,7 +114,8 @@ namespace QuanLySanBong
             string encodedAddInfo = Uri.EscapeDataString(addInfo);
             string encodedAccountName = Uri.EscapeDataString(accountName);
 
-            qrUrl = $"https://img.vietqr.io/image/{bankId}-{accountNo}-{template}.png?amount={totalBill}&addInfo={encodedAddInfo}&accountName={encodedAccountName}";
+            //qrUrl = $"https://img.vietqr.io/image/{bankId}-{accountNo}-{template}.png?amount={totalBill}&addInfo={encodedAddInfo}&accountName={encodedAccountName}";
+            qrUrl = $"https://img.vietqr.io/image/MB-446619999-print.png?amount={totalBill}&addInfo={encodedAddInfo}&accountName={encodedAccountName}";
             picQRCode.ImageLocation = qrUrl;
             lblQRInfo.Text = $"Quét mã QR để thanh toán {totalBill} VNĐ\nNội dung: {addInfo}";
         }
