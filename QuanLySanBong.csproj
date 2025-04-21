@@ -96,11 +96,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormDatSan.cs">
-      <SubType>Form</SubType>
+    <Compile Include="DatSan.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormDatSan.Designer.cs">
-      <DependentUpon>FormDatSan.cs</DependentUpon>
+    <Compile Include="DatSan.Designer.cs">
+      <DependentUpon>DatSan.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -114,43 +114,40 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQuanLySan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQuanLySan.Designer.cs">
-      <DependentUpon>FormQuanLySan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormThanhToan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormThanhToan.Designer.cs">
-      <DependentUpon>FormThanhToan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormXemLich.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormXemLich.Designer.cs">
-      <DependentUpon>FormXemLich.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormDatSan.resx">
-      <DependentUpon>FormDatSan.cs</DependentUpon>
+    <Compile Include="QuanLySanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLySanControl.Designer.cs">
+      <DependentUpon>QuanLySanControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThanhToanControl.Designer.cs">
+      <DependentUpon>ThanhToanControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrangChuControl.Designer.cs">
+      <DependentUpon>TrangChuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemLichControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XemLichControl.Designer.cs">
+      <DependentUpon>XemLichControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DatSan.resx">
+      <DependentUpon>DatSan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQuanLySan.resx">
-      <DependentUpon>FormQuanLySan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormThanhToan.resx">
-      <DependentUpon>FormThanhToan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormXemLich.resx">
-      <DependentUpon>FormXemLich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +158,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLySanControl.resx">
+      <DependentUpon>QuanLySanControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToanControl.resx">
+      <DependentUpon>ThanhToanControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChuControl.resx">
+      <DependentUpon>TrangChuControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

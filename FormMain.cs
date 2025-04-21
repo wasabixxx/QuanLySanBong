@@ -1,90 +1,64 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace QuanLySanBong
 {
     public partial class FormMain : Form
     {
-        private FormQuanLySan formQuanLySan;
-        private FormDatSan formDatSan;
-        private FormXemLich formXemLich;
-        private FormThanhToan formThanhToan;
+        private UserControl currentControl;
 
         public FormMain()
         {
             InitializeComponent();
+            CustomizeDesign();
+            // Hiển thị TrangChuControl mặc định khi khởi động
+            OpenUserControl(new TrangChuControl());
         }
 
-        private void CloseAllForms()
+        private void OpenUserControl(UserControl userControl)
         {
-            if (formQuanLySan != null && !formQuanLySan.IsDisposed)
+            if (currentControl != null)
             {
-                formQuanLySan.Close();
-                formQuanLySan = null;
+                panelMainContent.Controls.Remove(currentControl);
+                currentControl.Dispose();
             }
-            if (formDatSan != null && !formDatSan.IsDisposed)
-            {
-                formDatSan.Close();
-                formDatSan = null;
-            }
-            if (formXemLich != null && !formXemLich.IsDisposed)
-            {
-                formXemLich.Close();
-                formXemLich = null;
-            }
-            if (formThanhToan != null && !formThanhToan.IsDisposed)
-            {
-                formThanhToan.Close();
-                formThanhToan = null;
-            }
+            currentControl = userControl;
+            userControl.Dock = DockStyle.Fill;
+            panelMainContent.Controls.Add(userControl);
+            userControl.BringToFront();
         }
 
-        private void mnuQuanLySan_Click(object sender, EventArgs e)
+        private void CustomizeDesign()
         {
-            CloseAllForms();
-            formQuanLySan = new FormQuanLySan();
-            formQuanLySan.MdiParent = this;
-            formQuanLySan.FormBorderStyle = FormBorderStyle.None;
-            formQuanLySan.Dock = DockStyle.Fill;
-            formQuanLySan.Show();
+            // Thêm icon cho các nút (giả định bạn đã có các icon trong Resources)
+            // Ví dụ: btnTrangChu.Image = Properties.Resources.trangchu_icon;
+            // Bạn có thể thêm icon trong Visual Studio designer
         }
 
-        private void mnuDatSan_Click(object sender, EventArgs e)
+        private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            CloseAllForms();
-            formDatSan = new FormDatSan();
-            formDatSan.MdiParent = this;
-            formDatSan.FormBorderStyle = FormBorderStyle.None;
-            formDatSan.Dock = DockStyle.Fill;
-            formDatSan.Show();
+            OpenUserControl(new TrangChuControl());
         }
 
-        private void mnuXemLich_Click(object sender, EventArgs e)
+        private void btnQuanLySan_Click(object sender, EventArgs e)
         {
-            CloseAllForms();
-            formXemLich = new FormXemLich();
-            formXemLich.MdiParent = this;
-            formXemLich.FormBorderStyle = FormBorderStyle.None;
-            formXemLich.Dock = DockStyle.Fill;
-            formXemLich.Show();
+            OpenUserControl(new QuanLySanControl());
         }
 
-        private void mnuThanhToan_Click(object sender, EventArgs e)
+        private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            CloseAllForms();
-            formThanhToan = new FormThanhToan();
-            formThanhToan.MdiParent = this;
-            formThanhToan.FormBorderStyle = FormBorderStyle.None;
-            formThanhToan.Dock = DockStyle.Fill;
-            formThanhToan.Show();
+            OpenUserControl(new ThanhToanControl());
         }
 
-        private void mnuThoat_Click(object sender, EventArgs e)
+        private void btnXemLich_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            OpenUserControl(new XemLichControl());
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

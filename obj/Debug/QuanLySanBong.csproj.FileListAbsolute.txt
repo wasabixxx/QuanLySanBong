@@ -18,9 +18,6 @@ D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.exe
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.pdb
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.FormLogin.resources
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.FormMain.resources
-D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.FormQuanLySan.resources
-D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.FormDatSan.resources
-D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.FormXemLich.resources
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.Buffers.dll
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.IO.Pipelines.dll
@@ -41,4 +38,6 @@ D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.Text.Encodings.Web.xml
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.Text.Json.xml
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.ValueTuple.xml
-D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.FormThanhToan.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.TrangChuControl.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.ThanhToanControl.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.QuanLySanControl.resources

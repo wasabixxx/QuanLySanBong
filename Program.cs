@@ -12,7 +12,7 @@ namespace QuanLySanBong
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Khởi động ứng dụng với form đăng nhập
-            Application.Run(new FormLogin());
+            Application.Run(new FormMain());
         }
     }
 }
