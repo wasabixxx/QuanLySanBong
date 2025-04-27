@@ -1,4 +1,7 @@
-﻿namespace QuanLySanBong
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace QuanLySanBong
 {
     partial class TrangChuControl
     {
@@ -15,6 +18,8 @@
 
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitle = new System.Windows.Forms.Label();
             this.flowLayoutPanelSan = new System.Windows.Forms.FlowLayoutPanel();
             this.panelThongTinDatSan = new System.Windows.Forms.Panel();
@@ -79,9 +84,31 @@
             this.dataGridViewDatSan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewDatSan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewDatSan.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewDatSan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewDatSan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDatSan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewDatSan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDatSan.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewDatSan.EnableHeadersVisualStyles = false;
             this.dataGridViewDatSan.Location = new System.Drawing.Point(10, 50);
             this.dataGridViewDatSan.Name = "dataGridViewDatSan";
+            this.dataGridViewDatSan.RowTemplate.Height = 30;
             this.dataGridViewDatSan.Size = new System.Drawing.Size(430, 224);
             this.dataGridViewDatSan.TabIndex = 1;
             // 
@@ -131,9 +158,9 @@
             // pictureBoxQRCode
             // 
             this.pictureBoxQRCode.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxQRCode.Location = new System.Drawing.Point(87, 163);
+            this.pictureBoxQRCode.Location = new System.Drawing.Point(52, 163);
             this.pictureBoxQRCode.Name = "pictureBoxQRCode";
-            this.pictureBoxQRCode.Size = new System.Drawing.Size(200, 200);
+            this.pictureBoxQRCode.Size = new System.Drawing.Size(152, 200);
             this.pictureBoxQRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxQRCode.TabIndex = 9;
             this.pictureBoxQRCode.TabStop = false;

@@ -1,4 +1,7 @@
-﻿namespace QuanLySanBong
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace QuanLySanBong
 {
     partial class QuanLySanControl
     {
@@ -48,7 +51,20 @@
 
             // 
             // dataGridViewSan
-            // 
+           this.dataGridViewSan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+           this.dataGridViewSan.BackgroundColor = Color.White;
+           this.dataGridViewSan.BorderStyle = BorderStyle.None;
+           this.dataGridViewSan.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+           this.dataGridViewSan.DefaultCellStyle.SelectionBackColor = Color.LightSkyBlue;
+           this.dataGridViewSan.DefaultCellStyle.SelectionForeColor = Color.Black;
+           this.dataGridViewSan.EnableHeadersVisualStyles = false;
+
+           this.dataGridViewSan.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+           this.dataGridViewSan.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+           this.dataGridViewSan.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Bold);
+
+           this.dataGridViewSan.RowTemplate.Height = 30; // tăng chiều cao dòng
             this.dataGridViewSan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSan.Location = new System.Drawing.Point(20, 60);
             this.dataGridViewSan.Name = "dataGridViewSan";

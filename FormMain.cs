@@ -36,27 +36,32 @@ namespace QuanLySanBong
             // Bạn có thể thêm icon trong Visual Studio designer
         }
 
-        private void btnTrangChu_Click(object sender, EventArgs e)
+        private void iconButtonTrangChu_Click(object sender, EventArgs e)
         {
             OpenUserControl(new TrangChuControl());
         }
 
-        private void btnQuanLySan_Click(object sender, EventArgs e)
+        private void iconButtonDatSan_Click(object sender, EventArgs e)
+        {
+            OpenUserControl(new DatSanControl());
+        }
+
+        private void iconButtonQuanLySan_Click(object sender, EventArgs e)
         {
             OpenUserControl(new QuanLySanControl());
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private void iconButtonThanhToan_Click(object sender, EventArgs e)
         {
             OpenUserControl(new ThanhToanControl());
         }
 
-        private void btnXemLich_Click(object sender, EventArgs e)
+        private void iconButtonXemLich_Click(object sender, EventArgs e)
         {
             OpenUserControl(new XemLichControl());
         }
 
-        private void btnDangXuat_Click(object sender, EventArgs e)
+        private void iconButtonThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

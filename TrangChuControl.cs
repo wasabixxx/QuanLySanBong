@@ -59,7 +59,7 @@ namespace QuanLySanBong
             comboBoxPhuongThuc.Width = panelThongTinThanhToan.Width - 140;
 
             pictureBoxQRCode.Width = 200;
-            pictureBoxQRCode.Height = 200;
+            pictureBoxQRCode.Height = 250;
             pictureBoxQRCode.Location = new Point((panelThongTinThanhToan.Width - pictureBoxQRCode.Width) / 2, 160);
 
             buttonInHoaDon.Location = new Point((panelThongTinThanhToan.Width - buttonInHoaDon.Width) / 2, panelThongTinThanhToan.Height - 60);

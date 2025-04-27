@@ -41,3 +41,6 @@ D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\System.ValueTuple.xml
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.TrangChuControl.resources
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.ThanhToanControl.resources
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.QuanLySanControl.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.DatSanControl.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.XemLichControl.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\FontAwesome.Sharp.dll

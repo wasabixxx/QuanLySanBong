@@ -1,0 +1,11 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$(MSBuildThisFileDirectory)..\staticwebassets\EasyButton.bundle.scp.css">
+      <SourceType>Package</SourceType>
+      <SourceId>EasyButton</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EasyButton</BasePath>
+      <RelativePath>EasyButton.bundle.scp.css</RelativePath>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

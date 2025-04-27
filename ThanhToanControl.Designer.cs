@@ -1,4 +1,7 @@
-﻿namespace QuanLySanBong
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace QuanLySanBong
 {
     partial class ThanhToanControl
     {
@@ -76,6 +79,22 @@
             // 
             // dataGridViewThanhToan
             // 
+
+            this.dataGridViewThanhToan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            this.dataGridViewThanhToan.BackgroundColor = Color.White;
+            this.dataGridViewThanhToan.BorderStyle = BorderStyle.None;
+            this.dataGridViewThanhToan.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridViewThanhToan.DefaultCellStyle.SelectionBackColor = Color.LightSkyBlue;
+            this.dataGridViewThanhToan.DefaultCellStyle.SelectionForeColor = Color.Black;
+            this.dataGridViewThanhToan.EnableHeadersVisualStyles = false;
+
+            this.dataGridViewThanhToan.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+            this.dataGridViewThanhToan.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            this.dataGridViewThanhToan.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Bold);
+
+            this.dataGridViewThanhToan.RowTemplate.Height = 30; // tăng chiều cao dòng
+
             this.dataGridViewThanhToan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewThanhToan.Location = new System.Drawing.Point(20, 90);
             this.dataGridViewThanhToan.Name = "dataGridViewThanhToan";
