@@ -27,6 +27,7 @@ namespace QuanLySanBong
             this.iconButtonTrangChu = new FontAwesome.Sharp.IconButton();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMainContent = new System.Windows.Forms.Panel();
+            this.iconButtonDoanhThu = new FontAwesome.Sharp.IconButton();
             this.panelSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -34,6 +35,7 @@ namespace QuanLySanBong
             // panelSideBar
             // 
             this.panelSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.panelSideBar.Controls.Add(this.iconButtonDoanhThu);
             this.panelSideBar.Controls.Add(this.pictureBox1);
             this.panelSideBar.Controls.Add(this.iconButtonXemLich);
             this.panelSideBar.Controls.Add(this.iconButtonThoat);
@@ -176,6 +178,22 @@ namespace QuanLySanBong
             this.panelMainContent.Size = new System.Drawing.Size(934, 661);
             this.panelMainContent.TabIndex = 1;
             // 
+            // iconButtonDoanhThu
+            // 
+            this.iconButtonDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButtonDoanhThu.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.iconButtonDoanhThu.IconColor = System.Drawing.Color.Black;
+            this.iconButtonDoanhThu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonDoanhThu.IconSize = 40;
+            this.iconButtonDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonDoanhThu.Location = new System.Drawing.Point(21, 465);
+            this.iconButtonDoanhThu.Name = "iconButtonDoanhThu";
+            this.iconButtonDoanhThu.Size = new System.Drawing.Size(201, 47);
+            this.iconButtonDoanhThu.TabIndex = 7;
+            this.iconButtonDoanhThu.Text = "Doanh Thu";
+            this.iconButtonDoanhThu.UseVisualStyleBackColor = true;
+            this.iconButtonDoanhThu.Click += new System.EventHandler(this.iconButtonDoanhThu_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +222,6 @@ namespace QuanLySanBong
         private FontAwesome.Sharp.IconButton iconButtonDatSan;
         private FontAwesome.Sharp.IconButton iconButtonTrangChu;
         private PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton iconButtonDoanhThu;
     }
 }

@@ -44,3 +44,5 @@ D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.QuanLySanControl.resou
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.DatSanControl.resources
 D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.XemLichControl.resources
 D:\2.LapTrinhDotNet\QuanLySanBong\bin\Debug\FontAwesome.Sharp.dll
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\YourNamespace.FormSplash.resources
+D:\2.LapTrinhDotNet\QuanLySanBong\obj\Debug\QuanLySanBong.DoanhThuControl.resources

@@ -76,7 +76,7 @@ namespace QuanLySanBong
 
                 if (count > 0)
                 {
-                    MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     FormMain formMain = new FormMain();
                     formMain.Show();
                     this.Hide();

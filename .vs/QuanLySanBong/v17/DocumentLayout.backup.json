@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\trangchucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:trangchucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\doanhthucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:doanhthucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\trangchucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:trangchucontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\doanhthucontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:doanhthucontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\trangchucontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:trangchucontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\xemlichcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:xemlichcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\quanlysancontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:quanlysancontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\datsancontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:datsancontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\xemlichcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:xemlichcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\xemlichcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:xemlichcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|d:\\2.laptrinhdotnet\\quanlysanbong\\datsancontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CBCF5A-D9FB-44F3-8699-A7E4CCAF64E3}|QuanLySanBong.csproj|solutionrelative:datsancontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLySanControl.Designer.cs",
+              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\QuanLySanControl.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLySanControl.Designer.cs",
+              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\QuanLySanControl.Designer.cs",
+              "RelativeToolTip": "QuanLySanControl.Designer.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAqwNQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:32:44.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TrangChuControl.cs",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\TrangChuControl.cs",
-              "RelativeDocumentMoniker": "TrangChuControl.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\TrangChuControl.cs",
-              "RelativeToolTip": "TrangChuControl.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAIwDsAAAAAAAAAAAAAAA==",
+              "Title": "DoanhThuControl.Designer.cs",
+              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DoanhThuControl.Designer.cs",
+              "RelativeDocumentMoniker": "DoanhThuControl.Designer.cs",
+              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DoanhThuControl.Designer.cs*",
+              "RelativeToolTip": "DoanhThuControl.Designer.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwDkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:48:03.187Z",
+              "WhenOpened": "2025-05-26T15:31:21.944Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrangChuControl.Designer.cs",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\TrangChuControl.Designer.cs",
-              "RelativeDocumentMoniker": "TrangChuControl.Designer.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\TrangChuControl.Designer.cs",
-              "RelativeToolTip": "TrangChuControl.Designer.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:47:37.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrangChuControl.cs [Design]",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\TrangChuControl.cs",
-              "RelativeDocumentMoniker": "TrangChuControl.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\TrangChuControl.cs [Design]",
-              "RelativeToolTip": "TrangChuControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:47:13.304Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "DatSanControl.Designer.cs",
+              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DatSanControl.Designer.cs",
+              "RelativeDocumentMoniker": "DatSanControl.Designer.cs",
+              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DatSanControl.Designer.cs",
+              "RelativeToolTip": "DatSanControl.Designer.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T15:30:56.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DatSanControl.cs [Design]",
               "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DatSanControl.cs",
               "RelativeDocumentMoniker": "DatSanControl.cs",
               "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DatSanControl.cs [Design]",
               "RelativeToolTip": "DatSanControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:46:50.201Z",
+              "WhenOpened": "2025-05-26T15:30:57.081Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormMain.cs [Design]",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\FormMain.cs",
-              "RelativeDocumentMoniker": "FormMain.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\FormMain.cs [Design]",
-              "RelativeToolTip": "FormMain.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "DoanhThuControl.cs [Design]",
+              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DoanhThuControl.cs",
+              "RelativeDocumentMoniker": "DoanhThuControl.cs",
+              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\DoanhThuControl.cs [Design]*",
+              "RelativeToolTip": "DoanhThuControl.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:40:53.933Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormMain.Designer.cs",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\FormMain.Designer.cs",
-              "RelativeDocumentMoniker": "FormMain.Designer.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\FormMain.Designer.cs",
-              "RelativeToolTip": "FormMain.Designer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:40:48.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "XemLichControl.Designer.cs",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\XemLichControl.Designer.cs",
-              "RelativeDocumentMoniker": "XemLichControl.Designer.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\XemLichControl.Designer.cs",
-              "RelativeToolTip": "XemLichControl.Designer.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAiwCQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:34:42.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "XemLichControl.cs",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\XemLichControl.cs",
-              "RelativeDocumentMoniker": "XemLichControl.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\XemLichControl.cs",
-              "RelativeToolTip": "XemLichControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:34:26.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "XemLichControl.cs [Design]",
-              "DocumentMoniker": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\XemLichControl.cs",
-              "RelativeDocumentMoniker": "XemLichControl.cs",
-              "ToolTip": "D:\\2.LapTrinhDotNet\\QuanLySanBong\\XemLichControl.cs [Design]",
-              "RelativeToolTip": "XemLichControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:34:24.679Z",
+              "WhenOpened": "2025-05-26T15:30:52.731Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -60,7 +60,10 @@ namespace QuanLySanBong
         {
             OpenUserControl(new XemLichControl());
         }
-
+        private void iconButtonDoanhThu_Click(object sender, EventArgs e)
+        {
+            OpenUserControl(new DoanhThuControl());
+        }
         private void iconButtonThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
