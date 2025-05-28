@@ -30,43 +30,47 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.Color.RosyBrown;
-            this.progressBar1.Location = new System.Drawing.Point(114, 395);
+            this.progressBar1.Location = new System.Drawing.Point(86, 321);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(686, 27);
+            this.progressBar1.Size = new System.Drawing.Size(514, 22);
             this.progressBar1.TabIndex = 0;
             // 
             // labelPercent
             // 
             this.labelPercent.AutoSize = true;
-            this.labelPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.labelPercent.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.labelPercent.BackColor = System.Drawing.Color.Black;
+            this.labelPercent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPercent.ForeColor = System.Drawing.Color.White;
-            this.labelPercent.Location = new System.Drawing.Point(423, 341);
+            this.labelPercent.Location = new System.Drawing.Point(558, 297);
+            this.labelPercent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPercent.Name = "labelPercent";
-            this.labelPercent.Size = new System.Drawing.Size(56, 37);
+            this.labelPercent.Size = new System.Drawing.Size(33, 21);
             this.labelPercent.TabIndex = 1;
             this.labelPercent.Text = "0%";
             // 
             // pictureBoxBackground
             // 
             this.pictureBoxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxBackground.Image = global::QuanLySanBong.Properties.Resources.default_venue_0_dc1f6687f619915230b62712508933a71a6e9529c390237b9766acc0d59539ab;
+            this.pictureBoxBackground.Image = global::QuanLySanBong.Properties.Resources._13307081;
             this.pictureBoxBackground.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxBackground.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxBackground.Name = "pictureBoxBackground";
-            this.pictureBoxBackground.Size = new System.Drawing.Size(914, 480);
+            this.pictureBoxBackground.Size = new System.Drawing.Size(686, 390);
             this.pictureBoxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBackground.TabIndex = 2;
             this.pictureBoxBackground.TabStop = false;
             // 
             // FormSplash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 480);
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Controls.Add(this.labelPercent);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBoxBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading...";

@@ -20,14 +20,12 @@ namespace QuanLySanBong
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.labelTitle = new System.Windows.Forms.Label();
             this.flowLayoutPanelSan = new System.Windows.Forms.FlowLayoutPanel();
             this.panelThongTinDatSan = new System.Windows.Forms.Panel();
             this.dataGridViewDatSan = new System.Windows.Forms.DataGridView();
             this.labelThongTinDatSan = new System.Windows.Forms.Label();
             this.panelThongTinThanhToan = new System.Windows.Forms.Panel();
             this.buttonInHoaDon = new System.Windows.Forms.Button();
-            this.pictureBoxQRCode = new System.Windows.Forms.PictureBox();
             this.buttonThanhToan = new System.Windows.Forms.Button();
             this.comboBoxPhuongThuc = new System.Windows.Forms.ComboBox();
             this.labelPhuongThuc = new System.Windows.Forms.Label();
@@ -36,25 +34,13 @@ namespace QuanLySanBong
             this.textBoxNguoiDat = new System.Windows.Forms.TextBox();
             this.labelNguoiDat = new System.Windows.Forms.Label();
             this.labelThongTinThanhToan = new System.Windows.Forms.Label();
+            this.pictureBoxQRCode = new System.Windows.Forms.PictureBox();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.panelThongTinDatSan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDatSan)).BeginInit();
             this.panelThongTinThanhToan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRCode)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.labelTitle.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(0, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(1101, 40);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "THÔNG TIN TRẠNG THÁI CÁC KHUNG GIỜ CỦA SÂN";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanelSan
             // 
@@ -114,8 +100,9 @@ namespace QuanLySanBong
             // 
             // labelThongTinDatSan
             // 
-            this.labelThongTinDatSan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.labelThongTinDatSan.Location = new System.Drawing.Point(10, 10);
+            this.labelThongTinDatSan.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThongTinDatSan.ForeColor = System.Drawing.Color.DarkBlue;
+            this.labelThongTinDatSan.Location = new System.Drawing.Point(6, 7);
             this.labelThongTinDatSan.Name = "labelThongTinDatSan";
             this.labelThongTinDatSan.Size = new System.Drawing.Size(300, 30);
             this.labelThongTinDatSan.TabIndex = 0;
@@ -144,7 +131,7 @@ namespace QuanLySanBong
             // buttonInHoaDon
             // 
             this.buttonInHoaDon.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonInHoaDon.BackColor = System.Drawing.Color.Green;
+            this.buttonInHoaDon.BackColor = System.Drawing.Color.DarkBlue;
             this.buttonInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInHoaDon.ForeColor = System.Drawing.Color.White;
             this.buttonInHoaDon.Location = new System.Drawing.Point(320, 264);
@@ -155,20 +142,10 @@ namespace QuanLySanBong
             this.buttonInHoaDon.UseVisualStyleBackColor = false;
             this.buttonInHoaDon.Click += new System.EventHandler(this.buttonInHoaDon_Click);
             // 
-            // pictureBoxQRCode
-            // 
-            this.pictureBoxQRCode.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxQRCode.Location = new System.Drawing.Point(52, 163);
-            this.pictureBoxQRCode.Name = "pictureBoxQRCode";
-            this.pictureBoxQRCode.Size = new System.Drawing.Size(152, 200);
-            this.pictureBoxQRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxQRCode.TabIndex = 9;
-            this.pictureBoxQRCode.TabStop = false;
-            // 
             // buttonThanhToan
             // 
             this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonThanhToan.BackColor = System.Drawing.Color.Orange;
+            this.buttonThanhToan.BackColor = System.Drawing.Color.Crimson;
             this.buttonThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThanhToan.ForeColor = System.Drawing.Color.White;
             this.buttonThanhToan.Location = new System.Drawing.Point(320, 180);
@@ -192,7 +169,8 @@ namespace QuanLySanBong
             // 
             // labelPhuongThuc
             // 
-            this.labelPhuongThuc.Font = new System.Drawing.Font("Arial", 10F);
+            this.labelPhuongThuc.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPhuongThuc.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelPhuongThuc.Location = new System.Drawing.Point(10, 130);
             this.labelPhuongThuc.Name = "labelPhuongThuc";
             this.labelPhuongThuc.Size = new System.Drawing.Size(100, 30);
@@ -210,7 +188,8 @@ namespace QuanLySanBong
             // 
             // labelTongTien
             // 
-            this.labelTongTien.Font = new System.Drawing.Font("Arial", 10F);
+            this.labelTongTien.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTongTien.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelTongTien.Location = new System.Drawing.Point(10, 90);
             this.labelTongTien.Name = "labelTongTien";
             this.labelTongTien.Size = new System.Drawing.Size(100, 30);
@@ -228,7 +207,8 @@ namespace QuanLySanBong
             // 
             // labelNguoiDat
             // 
-            this.labelNguoiDat.Font = new System.Drawing.Font("Arial", 10F);
+            this.labelNguoiDat.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNguoiDat.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelNguoiDat.Location = new System.Drawing.Point(10, 50);
             this.labelNguoiDat.Name = "labelNguoiDat";
             this.labelNguoiDat.Size = new System.Drawing.Size(100, 30);
@@ -237,17 +217,43 @@ namespace QuanLySanBong
             // 
             // labelThongTinThanhToan
             // 
-            this.labelThongTinThanhToan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.labelThongTinThanhToan.Location = new System.Drawing.Point(10, 10);
+            this.labelThongTinThanhToan.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThongTinThanhToan.ForeColor = System.Drawing.Color.DarkBlue;
+            this.labelThongTinThanhToan.Location = new System.Drawing.Point(6, 7);
             this.labelThongTinThanhToan.Name = "labelThongTinThanhToan";
             this.labelThongTinThanhToan.Size = new System.Drawing.Size(300, 30);
             this.labelThongTinThanhToan.TabIndex = 0;
             this.labelThongTinThanhToan.Text = "THÔNG TIN THANH TOÁN GIAO DỊCH";
             // 
+            // pictureBoxQRCode
+            // 
+            this.pictureBoxQRCode.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBoxQRCode.Location = new System.Drawing.Point(52, 163);
+            this.pictureBoxQRCode.Name = "pictureBoxQRCode";
+            this.pictureBoxQRCode.Size = new System.Drawing.Size(152, 200);
+            this.pictureBoxQRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxQRCode.TabIndex = 9;
+            this.pictureBoxQRCode.TabStop = false;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTitle.BackColor = System.Drawing.Color.DarkBlue;
+            this.labelTitle.Font = new System.Drawing.Font("Baloo Bhaijaan 2", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTitle.Location = new System.Drawing.Point(0, 0);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(1101, 40);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "THÔNG TIN TRẠNG THÁI CÁC KHUNG GIỜ CỦA SÂN";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // TrangChuControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.Controls.Add(this.panelThongTinThanhToan);
             this.Controls.Add(this.panelThongTinDatSan);
             this.Controls.Add(this.flowLayoutPanelSan);
@@ -262,8 +268,6 @@ namespace QuanLySanBong
             this.ResumeLayout(false);
 
         }
-
-        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSan;
         private System.Windows.Forms.Panel panelThongTinDatSan;
         private System.Windows.Forms.Label labelThongTinDatSan;
@@ -279,5 +283,6 @@ namespace QuanLySanBong
         private System.Windows.Forms.Button buttonThanhToan;
         private System.Windows.Forms.PictureBox pictureBoxQRCode;
         private System.Windows.Forms.Button buttonInHoaDon;
+        private Label labelTitle;
     }
 }

@@ -223,6 +223,21 @@
   <ItemGroup>
     <None Include="Resources\default_venue_0-dc1f6687f619915230b62712508933a71a6e9529c390237b9766acc0d59539ab.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fc-barcelona-seeklogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1330708.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camp-nou-stadium-crowd-mosaic-snnnywjrdlmzvyqc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1105614.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13307081.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

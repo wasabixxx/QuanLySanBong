@@ -63,9 +63,49 @@ namespace QuanLySanBong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1105614 {
+            get {
+                object obj = ResourceManager.GetObject("1105614", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1330708 {
+            get {
+                object obj = ResourceManager.GetObject("1330708", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _13307081 {
+            get {
+                object obj = ResourceManager.GetObject("13307081", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avt_hmc_30_4 {
             get {
                 object obj = ResourceManager.GetObject("avt hmc 30-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap camp_nou_stadium_crowd_mosaic_snnnywjrdlmzvyqc {
+            get {
+                object obj = ResourceManager.GetObject("camp-nou-stadium-crowd-mosaic-snnnywjrdlmzvyqc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +126,16 @@ namespace QuanLySanBong.Properties {
         internal static System.Drawing.Bitmap detailed_soccer_ball_football_icon_isolated {
             get {
                 object obj = ResourceManager.GetObject("detailed-soccer-ball-football-icon-isolated", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fc_barcelona_seeklogo {
+            get {
+                object obj = ResourceManager.GetObject("fc-barcelona-seeklogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

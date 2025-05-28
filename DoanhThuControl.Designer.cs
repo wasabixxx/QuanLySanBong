@@ -31,8 +31,8 @@ namespace QuanLySanBong
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelTongDoanhThu = new System.Windows.Forms.Label();
             this.dataGridViewDoanhThu = new System.Windows.Forms.DataGridView();
@@ -48,13 +48,12 @@ namespace QuanLySanBong
             // 
             this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.labelTitle.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.BackColor = System.Drawing.Color.DarkBlue;
+            this.labelTitle.Font = new System.Drawing.Font("Baloo Bhaijaan 2", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
             this.labelTitle.Location = new System.Drawing.Point(0, 0);
-            this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(1245, 49);
+            this.labelTitle.Size = new System.Drawing.Size(934, 40);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "TỔNG HỢP DOANH THU";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,10 +62,10 @@ namespace QuanLySanBong
             // 
             this.labelTongDoanhThu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelTongDoanhThu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTongDoanhThu.Location = new System.Drawing.Point(13, 62);
-            this.labelTongDoanhThu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTongDoanhThu.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.labelTongDoanhThu.Location = new System.Drawing.Point(10, 50);
             this.labelTongDoanhThu.Name = "labelTongDoanhThu";
-            this.labelTongDoanhThu.Size = new System.Drawing.Size(533, 31);
+            this.labelTongDoanhThu.Size = new System.Drawing.Size(400, 25);
             this.labelTongDoanhThu.TabIndex = 1;
             this.labelTongDoanhThu.Text = "Tổng doanh thu: 0 VNĐ";
             // 
@@ -76,39 +75,38 @@ namespace QuanLySanBong
             this.dataGridViewDoanhThu.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewDoanhThu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewDoanhThu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewDoanhThu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDoanhThu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewDoanhThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewDoanhThu.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewDoanhThu.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewDoanhThu.EnableHeadersVisualStyles = false;
-            this.dataGridViewDoanhThu.Location = new System.Drawing.Point(17, 357);
-            this.dataGridViewDoanhThu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewDoanhThu.Location = new System.Drawing.Point(13, 290);
             this.dataGridViewDoanhThu.Name = "dataGridViewDoanhThu";
             this.dataGridViewDoanhThu.RowTemplate.Height = 30;
-            this.dataGridViewDoanhThu.Size = new System.Drawing.Size(533, 246);
+            this.dataGridViewDoanhThu.Size = new System.Drawing.Size(400, 200);
             this.dataGridViewDoanhThu.TabIndex = 2;
             // 
             // labelThang
             // 
             this.labelThang.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelThang.AutoSize = true;
-            this.labelThang.Location = new System.Drawing.Point(13, 98);
-            this.labelThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelThang.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.labelThang.Location = new System.Drawing.Point(10, 80);
             this.labelThang.Name = "labelThang";
-            this.labelThang.Size = new System.Drawing.Size(49, 16);
+            this.labelThang.Size = new System.Drawing.Size(41, 13);
             this.labelThang.TabIndex = 3;
             this.labelThang.Text = "Tháng:";
             // 
@@ -116,20 +114,19 @@ namespace QuanLySanBong
             // 
             this.comboBoxThang.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBoxThang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxThang.Location = new System.Drawing.Point(93, 98);
-            this.comboBoxThang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxThang.Location = new System.Drawing.Point(70, 80);
             this.comboBoxThang.Name = "comboBoxThang";
-            this.comboBoxThang.Size = new System.Drawing.Size(65, 24);
+            this.comboBoxThang.Size = new System.Drawing.Size(50, 21);
             this.comboBoxThang.TabIndex = 4;
             // 
             // labelNam
             // 
             this.labelNam.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelNam.AutoSize = true;
-            this.labelNam.Location = new System.Drawing.Point(173, 98);
-            this.labelNam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNam.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.labelNam.Location = new System.Drawing.Point(130, 80);
             this.labelNam.Name = "labelNam";
-            this.labelNam.Size = new System.Drawing.Size(39, 16);
+            this.labelNam.Size = new System.Drawing.Size(32, 13);
             this.labelNam.TabIndex = 5;
             this.labelNam.Text = "Năm:";
             // 
@@ -137,31 +134,30 @@ namespace QuanLySanBong
             // 
             this.comboBoxNam.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBoxNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxNam.Location = new System.Drawing.Point(240, 98);
-            this.comboBoxNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxNam.Location = new System.Drawing.Point(180, 80);
             this.comboBoxNam.Name = "comboBoxNam";
-            this.comboBoxNam.Size = new System.Drawing.Size(92, 24);
+            this.comboBoxNam.Size = new System.Drawing.Size(70, 21);
             this.comboBoxNam.TabIndex = 6;
             // 
             // buttonSearch
             // 
             this.buttonSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonSearch.BackColor = System.Drawing.Color.Green;
+            this.buttonSearch.BackColor = System.Drawing.Color.Crimson;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.ForeColor = System.Drawing.Color.White;
-            this.buttonSearch.Location = new System.Drawing.Point(17, 151);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSearch.Location = new System.Drawing.Point(13, 123);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(107, 31);
+            this.buttonSearch.Size = new System.Drawing.Size(80, 25);
             this.buttonSearch.TabIndex = 7;
             this.buttonSearch.Text = "Tìm kiếm";
-            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // DoanhThuControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.comboBoxNam);
             this.Controls.Add(this.labelNam);
@@ -170,9 +166,8 @@ namespace QuanLySanBong
             this.Controls.Add(this.dataGridViewDoanhThu);
             this.Controls.Add(this.labelTongDoanhThu);
             this.Controls.Add(this.labelTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DoanhThuControl";
-            this.Size = new System.Drawing.Size(1245, 814);
+            this.Size = new System.Drawing.Size(934, 661);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoanhThu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

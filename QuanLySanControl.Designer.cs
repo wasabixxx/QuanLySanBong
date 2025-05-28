@@ -18,6 +18,8 @@ namespace QuanLySanBong
 
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelTitle = new System.Windows.Forms.Label();
             this.dataGridViewSan = new System.Windows.Forms.DataGridView();
             this.panelThongTinSan = new System.Windows.Forms.Panel();
@@ -33,12 +35,13 @@ namespace QuanLySanBong
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSan)).BeginInit();
             this.panelThongTinSan.SuspendLayout();
             this.SuspendLayout();
-
             // 
             // labelTitle
             // 
-            this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.labelTitle.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTitle.BackColor = System.Drawing.Color.DarkBlue;
+            this.labelTitle.Font = new System.Drawing.Font("Baloo Bhaijaan 2", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
             this.labelTitle.Location = new System.Drawing.Point(0, 0);
             this.labelTitle.Name = "labelTitle";
@@ -46,37 +49,44 @@ namespace QuanLySanBong
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "QUẢN LÝ SÂN BÓNG";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // dataGridViewSan
-           this.dataGridViewSan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-           this.dataGridViewSan.BackgroundColor = Color.White;
-           this.dataGridViewSan.BorderStyle = BorderStyle.None;
-           this.dataGridViewSan.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-           this.dataGridViewSan.DefaultCellStyle.SelectionBackColor = Color.LightSkyBlue;
-           this.dataGridViewSan.DefaultCellStyle.SelectionForeColor = Color.Black;
-           this.dataGridViewSan.EnableHeadersVisualStyles = false;
-
-           this.dataGridViewSan.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
-           this.dataGridViewSan.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-           this.dataGridViewSan.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Bold);
-
-           this.dataGridViewSan.RowTemplate.Height = 30; // tăng chiều cao dòng
+            // 
+            this.dataGridViewSan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewSan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewSan.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewSan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewSan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewSan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewSan.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewSan.EnableHeadersVisualStyles = false;
             this.dataGridViewSan.Location = new System.Drawing.Point(20, 60);
             this.dataGridViewSan.Name = "dataGridViewSan";
+            this.dataGridViewSan.RowTemplate.Height = 30;
             this.dataGridViewSan.Size = new System.Drawing.Size(894, 200);
             this.dataGridViewSan.TabIndex = 1;
-            this.dataGridViewSan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // panelThongTinSan
             // 
+            this.panelThongTinSan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelThongTinSan.BackColor = System.Drawing.Color.White;
             this.panelThongTinSan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelThongTinSan.Controls.Add(this.buttonXoa);
@@ -92,13 +102,11 @@ namespace QuanLySanBong
             this.panelThongTinSan.Name = "panelThongTinSan";
             this.panelThongTinSan.Size = new System.Drawing.Size(894, 200);
             this.panelThongTinSan.TabIndex = 2;
-            this.panelThongTinSan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // buttonXoa
             // 
-            this.buttonXoa.BackColor = System.Drawing.Color.Red;
+            this.buttonXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonXoa.BackColor = System.Drawing.Color.Crimson;
             this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonXoa.ForeColor = System.Drawing.Color.White;
             this.buttonXoa.Location = new System.Drawing.Point(690, 130);
@@ -108,12 +116,11 @@ namespace QuanLySanBong
             this.buttonXoa.Text = "Xóa sân";
             this.buttonXoa.UseVisualStyleBackColor = false;
             this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
-            this.buttonXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // buttonSua
             // 
-            this.buttonSua.BackColor = System.Drawing.Color.Orange;
+            this.buttonSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSua.BackColor = System.Drawing.Color.Goldenrod;
             this.buttonSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSua.ForeColor = System.Drawing.Color.White;
             this.buttonSua.Location = new System.Drawing.Point(580, 130);
@@ -123,12 +130,11 @@ namespace QuanLySanBong
             this.buttonSua.Text = "Sửa sân";
             this.buttonSua.UseVisualStyleBackColor = false;
             this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
-            this.buttonSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // buttonThem
             // 
-            this.buttonThem.BackColor = System.Drawing.Color.Green;
+            this.buttonThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonThem.BackColor = System.Drawing.Color.DarkBlue;
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThem.ForeColor = System.Drawing.Color.White;
             this.buttonThem.Location = new System.Drawing.Point(470, 130);
@@ -138,75 +144,71 @@ namespace QuanLySanBong
             this.buttonThem.Text = "Thêm sân";
             this.buttonThem.UseVisualStyleBackColor = false;
             this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
-            this.buttonThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // comboBoxTrangThai
             // 
+            this.comboBoxTrangThai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTrangThai.FormattingEnabled = true;
             this.comboBoxTrangThai.Location = new System.Drawing.Point(120, 90);
             this.comboBoxTrangThai.Name = "comboBoxTrangThai";
             this.comboBoxTrangThai.Size = new System.Drawing.Size(754, 21);
             this.comboBoxTrangThai.TabIndex = 5;
-            this.comboBoxTrangThai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // labelTrangThai
             // 
             this.labelTrangThai.Font = new System.Drawing.Font("Arial", 10F);
+            this.labelTrangThai.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelTrangThai.Location = new System.Drawing.Point(10, 90);
             this.labelTrangThai.Name = "labelTrangThai";
             this.labelTrangThai.Size = new System.Drawing.Size(100, 30);
             this.labelTrangThai.TabIndex = 4;
             this.labelTrangThai.Text = "Trạng thái:";
-
             // 
             // textBoxGiaThue
             // 
+            this.textBoxGiaThue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxGiaThue.Location = new System.Drawing.Point(120, 50);
             this.textBoxGiaThue.Name = "textBoxGiaThue";
             this.textBoxGiaThue.Size = new System.Drawing.Size(754, 20);
             this.textBoxGiaThue.TabIndex = 3;
-            this.textBoxGiaThue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // labelGiaThue
             // 
             this.labelGiaThue.Font = new System.Drawing.Font("Arial", 10F);
+            this.labelGiaThue.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelGiaThue.Location = new System.Drawing.Point(10, 50);
             this.labelGiaThue.Name = "labelGiaThue";
             this.labelGiaThue.Size = new System.Drawing.Size(100, 30);
             this.labelGiaThue.TabIndex = 2;
             this.labelGiaThue.Text = "Giá thuê (VND/giờ):";
-
             // 
             // textBoxTenSan
             // 
+            this.textBoxTenSan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTenSan.Location = new System.Drawing.Point(120, 10);
             this.textBoxTenSan.Name = "textBoxTenSan";
             this.textBoxTenSan.Size = new System.Drawing.Size(754, 20);
             this.textBoxTenSan.TabIndex = 1;
-            this.textBoxTenSan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-
             // 
             // labelTenSan
             // 
             this.labelTenSan.Font = new System.Drawing.Font("Arial", 10F);
+            this.labelTenSan.ForeColor = System.Drawing.Color.RoyalBlue;
             this.labelTenSan.Location = new System.Drawing.Point(10, 10);
             this.labelTenSan.Name = "labelTenSan";
             this.labelTenSan.Size = new System.Drawing.Size(100, 30);
             this.labelTenSan.TabIndex = 0;
             this.labelTenSan.Text = "Tên sân:";
-
             // 
             // QuanLySanControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.Controls.Add(this.panelThongTinSan);
             this.Controls.Add(this.dataGridViewSan);
             this.Controls.Add(this.labelTitle);
@@ -216,6 +218,7 @@ namespace QuanLySanBong
             this.panelThongTinSan.ResumeLayout(false);
             this.panelThongTinSan.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Label labelTitle;
